@@ -1,0 +1,5 @@
+#D9D8D7 - szürke
+#F2F2F2 - világos szürke
+#BFA98E - világos barna
+#8C796D - szürkés barna
+#0D0D0D - majdnem fekete
