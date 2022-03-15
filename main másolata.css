@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    /*border: solid thin red;*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f2f2;
+    margin: 0px;
+}
+body, header, main {
+    position: relative;
+}
+
+#beginner {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 0px;
+    border: solid thin blue;
+    background-color: #D9D8D7;
+}
+
+@media screen and (min-width: 768px) {
+    #nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 60vw;
+    }
+}
+
+#info, #form {
+    background-color: #D9D8D7;
+}
+#nev, #phone, #email, #fo, #arrival, #getaway, #info {
+    background-color: #f2f2f2;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 50% 50%;
+    
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.grid-container div img {
+    width: 17vw;
+    height: auto;
+}
+.grid-item1 {
+    grid-column: 1;
+    grid-row: 1 / 4;
+}
+.grid-item2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+.grid-item3 {
+    grid-column: 3;
+    grid-row: 1;
+}
+.grid-item4 {
+    grid-column: 4;
+    grid-row: 1;
+}
+.grid-item5 {
+    grid-column: 2;
+    grid-row: 2;
+}
+.grid-item6 {
+    grid-column: 3;
+    grid-row: 2;
+}
+.grid-item7 {
+    grid-column: 4;
+    grid-row: 2;
+}
+.grid-item8 {
+    grid-column: 5;
+    grid-row: 1 / 4;
+}
+
+footer {
+    background-color: #0D0D0D ;
+    color: #D9D8D7;
+}
+
+h1 {
+    text-align: center;
+}
+
+#logo {
+    height: 200px;
+    width: auto;
+}
+#logo-content, #ajanlat-link {
+    display: flex;
+    justify-content: center;
+}
+nav li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+#contact {
+    display: block;
+    justify-content: center;
+}
+#maps {
+    width: 100%;
+}
+#title, #form {
+    text-align: center;
+}
+/* Scroll button */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: green; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px;  /*Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    width: 60px;
+    height: 60px;
+    
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+  .arrow {
+    border: solid white;
+    border-width: 0 7px 7px 0;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 7px;
+  
+  }
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
