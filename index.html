@@ -1,80 +1,323 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <title>Cottage House Balatonszemes</title>
 </head>
+
 <body>
-    <header>
-        <div>
-            <div>
-                <img src="HN_proba.png" alt="logo">
-            </div>
-            <ul>
-                <li>Árak</li>
-                <li>Képek</li>
-                <li>valami</li>
-                <li>Rólunk írták</li>
-                <li>Elérhetőségek</li>
-            </ul>
-            <div>
-                Kérjen ajánlatot
-            </div>
+    <header id="nav">
+        <div id="logo-content">
+            <img id="logo" src="Cottage_House_ver3.png" alt="logo">
+        </div>
+        <nav>
+            <li>
+                <a href="#prices">Árak</a>
+            </li>
+            <li>
+                <a href="#info">Szálláshely információk</a>
+            </li>
+            <li>
+                <a href="#full-form">Elérhetőségek</a>
+            </li>
+        </nav>
+        <div id="ajanlat-link">
+            <a href="#form"> Kérjen ajánlatot!</a>
         </div>
     </header>
     <main>
         <div>
-            <h1>Cottage House Balatonszemes</h1>
-        </div>
-        <div>
-            árak
-        </div>
-        <div>
             <div>
-                <h2>Üdvözöljük</h2>
-                <h2>AMagyar tenger partján</h2>
-            </div>
-            <div>
-                <p>Balatonszemes központjában,egy csendes kis utcában található a felújított, 
-                   minden kényelemmel felszerelt falusi házunk. A kerti pavilonban jól esik a reggeli kávé,
-                   vagy az esti sör. Grillezésre, Sajtfondüzésre is van lehetőség, 
-                   a környéken vett kiváló borokat a pincében is tárolhatják.
-                   A ház vastag falai légkondicionálás nélkül is nagyon kellemes 
-                   hőmérsékletet biztosítanak még a kánikulában is.
-                </p>
+                <h1>Cottage House Balatonszemes</h1>
+                <img id="beginner" src="képek/Balatonszemes_4.jpg" alt="kép">
+                <div id="prices">
+                    <h2>Árak</h2>
+                    <p>
+                        június 1-től június 23-ig és augusztus 29-től szeptember 11-ig: 18.000 Ft / Éjszaka
+                    </p>
+                    <p>
+                        június 24-től július 14-ig és augusztus 22-től augusztus 28-ig 21.500 Ft / Éjszaka
+                    </p>
+                    <p>
+                        július 15-től augusztus 21-ig 24.000.-Ft/ éj
+                    </p>
+
+                    <p>
+                        Minimum foglalás: 3 éjszaka.
+                    </p>
+                    <p>
+                        Legalább egy egész hét foglalás esetén 10% kedvezmény.
+                    </p>
+                    <p>
+                        Kérjen ajánlatot <a href="#form">itt!</a>
+                    </p>
+                </div>
+                <div>
+                    <h2>Üdvözöljük</h2>
+                    <h2>A Magyar tenger partján</h2>
+                </div>
+                <div>
+                    <p>Balatonszemes központjában,egy csendes kis utcában található a felújított,
+                        minden kényelemmel felszerelt falusi házunk. A kerti pavilonban jól esik a reggeli kávé,
+                        vagy az esti sör. Grillezésre, Sajtfondüzésre is van lehetőség,
+                        a környéken vett kiváló borokat a pincében is tárolhatják.
+                        A ház vastag falai légkondicionálás nélkül is nagyon kellemes
+                        hőmérsékletet biztosítanak még a kánikulában is.
+                    </p>
+                </div>
             </div>
         </div>
-        <div>
-            képekgrid
+
+        <div class="row">
+            <div class="column">
+                <img src="képek/kép1.jpg" style="width:100%" onclick="openModal();currentSlide(1)"
+                    class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="képek/kép2.jpg" style="width:100%" onclick="openModal();currentSlide(2)"
+                    class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="képek/kép3.jpg" style="width:100%" onclick="openModal();currentSlide(3)"
+                    class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="képek/kép4.jpg" style="width:100%" onclick="openModal();currentSlide(4)"
+                    class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="képek/kép5_1.jpg" style="width:100%" onclick="openModal();currentSlide(5)"
+                    class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="képek/kép6_1.jpg" style="width:100%" onclick="openModal();currentSlide(6)"
+                    class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="képek/kép7.jpg" style="width:100%" onclick="openModal();currentSlide(7)"
+                    class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="képek/kép8.jpg" style="width:100%" onclick="openModal();currentSlide(8)"
+                    class="hover-shadow cursor">
+            </div>            
+            <div class="column">
+                <img src="képek/kép9.jpg" style="width:100%" onclick="openModal();currentSlide(8)"
+                    class="hover-shadow cursor">
+            </div>            
+            <div class="column">
+                <img src="képek/kép10.jpg" style="width:100%" onclick="openModal();currentSlide(8)"
+                    class="hover-shadow cursor">
+            </div>            
+            <div class="column">
+                <img src="képek/kép11.jpg" style="width:100%" onclick="openModal();currentSlide(8)"
+                    class="hover-shadow cursor">
+            </div>            
+            <div class="column">
+                <img src="képek/kép12.jpg" style="width:100%" onclick="openModal();currentSlide(8)"
+                    class="hover-shadow cursor">
+            </div>            
+            <div class="column">
+                <img src="képek/kép13.jpg" style="width:100%" onclick="openModal();currentSlide(8)"
+                    class="hover-shadow cursor">
+            </div>            
+            <div class="column">
+                <img src="képek/kép14.jpg" style="width:100%" onclick="openModal();currentSlide(8)"
+                    class="hover-shadow cursor">
+            </div>            
+            <div class="column">
+                <img src="képek/kép15.jpg" style="width:100%" onclick="openModal();currentSlide(8)"
+                    class="hover-shadow cursor">
+            </div>            
+            <div class="column">
+                <img src="képek/kép16.jpg" style="width:100%" onclick="openModal();currentSlide(8)"
+                    class="hover-shadow cursor">
+            </div>            
         </div>
-        <div>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 16</div>
+                    <img src="képek/kép1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 16</div>
+                    <img src="képek/kép2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 16</div>
+                    <img src="képek/kép3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 16</div>
+                    <img src="képek/kép4.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 16</div>
+                    <img src="képek/kép5_1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 16</div>
+                    <img src="képek/kép6_1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 16</div>
+                    <img src="képek/kép7.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 16</div>
+                    <img src="képek/kép8.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">9 / 16</div>
+                    <img src="képek/kép9.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">10 / 16</div>
+                    <img src="képek/kép10.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">11 / 16</div>
+                    <img src="képek/kép11.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">12 / 16</div>
+                    <img src="képek/kép12.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">13 / 16</div>
+                    <img src="képek/kép13.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">14 / 16</div>
+                    <img src="képek/kép14.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">15 / 16</div>
+                    <img src="képek/kép15.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">16 / 16</div>
+                    <img src="képek/kép16.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+
+                <div class="column">
+                    <img class="demo cursor" src="képek/kép1.jpg" style="width:90%" onclick="currentSlide(1)"
+                        alt="kép1">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="képek/kép2.jpg" style="width:90%" onclick="currentSlide(2)"
+                        alt="kép2">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="képek/kép3.jpg" style="width:90%" onclick="currentSlide(3)"
+                        alt="kép3">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="képek/kép4.jpg" style="width:90%" onclick="currentSlide(4)"
+                        alt="kép4">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="képek/kép5_1.jpg" style="width:90%" onclick="currentSlide(5)"
+                        alt="kép5">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="képek/kép6_1.jpg" style="width:90%" onclick="currentSlide(6)"
+                        alt="kép6">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="képek/kép7.jpg" style="width:90%" onclick="currentSlide(7)"
+                        alt="kép7">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="képek/kép8.jpg" style="width:90%" onclick="currentSlide(8)"
+                        alt="kép8">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="képek/kép9.jpg" style="width:90%" onclick="currentSlide(9)"
+                        alt="kép9">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="képek/kép10.jpg" style="width:90%" onclick="currentSlide(10)"
+                        alt="kép10">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="képek/kép11.jpg" style="width:90%" onclick="currentSlide(11)"
+                        alt="kép11">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="képek/kép12.jpg" style="width:90%" onclick="currentSlide(12)"
+                        alt="kép12">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="képek/kép13.jpg" style="width:90%" onclick="currentSlide(13)"
+                        alt="kép13">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="képek/kép14.jpg" style="width:90%" onclick="currentSlide(14)"
+                        alt="kép14">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="képek/kép15.jpg" style="width:90%" onclick="currentSlide(15)"
+                        alt="kép15">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="képek/kép16.jpg" style="width:90%" onclick="currentSlide(16)"
+                        alt="kép16">
+                </div>
+            </div>
+        </div>
+        <div id="info">
             <h2>Szálláshely információk</h2>
-            <p>Az apartmanban mosó-,és szárítógép, ruhaszárító állvány, vasaló is van. 
-               A sat tv-n több mint 60 csatornát lehet fogni,köztük van gyermekműsort,sportműsort, 
-               sugárzó csatorna és több külföldi tv állomás is elérhető.
-               A kellemes időtöltéshez találnak sakk készletet, kártyát,és puzzle kirakókat is.
-               Az apartman Szemes szívében helyezkedik el,a vasútállomástól kb 400 méterre. 
-               Közvetlen közelben van közért,posta,kávézó,étterem.
-               A mindennel felszerelt szabad-strand kb 10 perc séta. 
-               A partra vezető utat rózsakert ,fagyizó,éttermek, övezik.
-               A házunk ikerház,mi a férjemmel a ház másik apartmanjában tartózkodunk egész nyáron. 
+            <p>Az apartmanban mosógép, ruhaszárító állvány, vasaló is van.
+                A sat tv-n több mint 60 csatornát lehet fogni,köztük van gyermekműsort,sportműsort,
+                sugárzó csatorna és több külföldi tv állomás is elérhető.
+                A kellemes időtöltéshez találnak sakk készletet, kártyát,és puzzle kirakókat is.
+                Az apartman Szemes szívében helyezkedik el,a vasútállomástól kb 400 méterre.
+                Közvetlen közelben van közért,posta,kávézó,étterem.
+                A mindennel felszerelt szabad-strand kb 10 perc séta.
+                A partra vezető utat rózsakert ,fagyizó,éttermek, övezik.
+                A házunk ikerház,mi a férjemmel a ház másik apartmanjában tartózkodunk egész nyáron.
             </p>
             <p>Szabadidő, kikapcsolodás a közelben:</p>
-            <p>Tenisz (1 km távolságra), Kerékpárkölcsönzés (1 km távolságra), Lovaglás (4 km távolságra), 
-               Túra lehetőségek (5 km távolságra), Asztalitenisz (800 m távolságra), Röplabda (800 m távolságra), 
-               Uszoda (1 km távolságra), Hajózás (900 m távolságra), Strandröplabda (800 m távolságra), 
-               Vitorlázás (900 m távolságra), Hajóbérlés (900 m távolságra), Strandfoci (800 m távolságra), 
-               Szörfözés (800 m távolságra)
+            <p>Tenisz (1 km távolságra), Kerékpárkölcsönzés (1 km távolságra), Lovaglás (4 km távolságra),
+                Túra lehetőségek (5 km távolságra), Asztalitenisz (800 m távolságra), Röplabda (800 m távolságra),
+                Uszoda (1 km távolságra), Hajózás (900 m távolságra), Strandröplabda (800 m távolságra),
+                Vitorlázás (900 m távolságra), Hajóbérlés (900 m távolságra), Strandfoci (800 m távolságra),
+                Szörfözés (800 m távolságra)
             </p>
         </div>
-        <div>
-            <caption>Házirend</caption>
+        <div id="houseRule">
+            <caption>
+                <h2>Házirend</h2>
+            </caption>
             <table>
                 <tr>
                     <td>Bejelentkezés</td>
-                    <td>14:00-24:00 Amennyiben később érkeznél, mint ahogy a szálláshely vendéget tud fogadni, kérjük, jelezd!</td>
+                    <td>14:00-24:00 Amennyiben később érkeznél, mint ahogy a szálláshely vendéget tud fogadni, kérjük,
+                        jelezd!</td>
                 </tr>
                 <tr>
                     <td>Kijelentkezés</td>
@@ -100,92 +343,125 @@
                     <td>NTAK regisztrációs szám</td>
                     <td>MA19004636 - Apartman</td>
                 </tr>
+                <tr>
+                    <td>
+                        A teljes összeg 40%-a foglaló
+                        amelyet foglalás visszaigazolásától számított 2 napon belül kell fizetni.
+                        Amennyiben a lefoglalt időponttól számított két héten belül mondja le
+                        a foglaló nem jár vissza.
+                    </td>
+                </tr>
             </table>
         </div>
-        <div>
-            Rólunk írták
+        <div id="full-form">
+            <div>
+                <div id="logo-content">
+                    <img id="logo" src="Cottage_House_ver3.png" alt="logo">
+                </div>
+                <div>
+                    <p>Címünk:</p>
+                    <p>8636 Balatonszemes, Kinizsi utca 6.</p>
+                    <p>Telefon:</p>
+                    <p>+36 30 214 3709</p>
+                    <p>E-mail:</p>
+                    <p>hetenyinora@gmail.com</p>
+
+                </div>
+            </div>
+            <div id="form">
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <fieldset>
+                        <h2>Ajánlatkérés</h2>
+                        <p>A lenti ajánlatkérés információ jellegű, NEM minősül foglalásnak!</p>
+                        <p>Az ajánlatkérést követő 24 órán belül visszajelzést adunk.</p>
+                        <p>Megértésüket előre is köszönjük!</p>
+                        <div id="form-content">
+                            <div>
+                                <div class="label">
+                                    <label for="nev">Név</label>
+                                </div>
+                                <div class="input">
+                                    <input type="text" name="nev" id="nev" required>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="label">
+                                    <label for="phone">Telefonszám</label>
+                                </div>
+                                <div class="input">
+                                    <input type="tel" name="phone" id="phone" required>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="label">
+                                    <label for="email">E-mail cím</label>
+                                </div>
+                                <div class="input">
+                                    <input type="email" name="email" id="email" required>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="label">
+                                    <label for="fo">Személyek száma</label>
+                                </div>
+                                <div class="input">
+                                    <input type="number" name="fo" id="fo" required>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="label">
+                                    <label for="arrival">Érkezés ideje</label>
+                                </div>
+                                <div class="input">
+                                    <input type="date" name="arrival" id="arrival" required>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="label">
+                                    <label for="getaway">Távozás ideje</label>
+                                </div>
+                                <div class="input">
+                                    <input type="date" name="getaway" id="getaway" required>
+                                </div>
+                            </div>
+                            <div class="label">
+                                <label for="info">Üzenet</label>
+                            </div>
+                            <div class="input">
+                                <textarea name="info" id="info" cols="30" rows="10"></textarea>
+                            </div>
+                            <button class="btn btn-outline-light right">Ajánlatkérés küldése</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div>
+                <h2>Látnivalók</h2>
+            </div>
         </div>
-        <div id="form">
-            <form action="" method="POST" enctype="multipart/form-data">
-                <fieldset>
-                    <h2>Ajánlatkérés</h2>
-                    <div id="form-content">
-                        <div>
-                            <div class="label">
-                                <label for="nev">Név</label>
-                            </div>
-                            <div class="input">
-                                <input type="text" name="nev" id="nev" required>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="label">
-                                <label for="phone">Telefonszám</label>
-                            </div>
-                            <div class="input">
-                                <input type="tel" name="phone" id="phone" required>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="label">
-                                <label for="email">E-mail cím</label>
-                            </div>
-                            <div class="input">
-                                <input type="email" name="email" id="email" required>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="label">
-                                <label for="fo">Személyek száma</label>
-                            </div>
-                            <div class="input">
-                                <input type="number" name="fo" id="fo" required>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="label">
-                                <label for="arrival">Érkezés ideje</label>
-                            </div>
-                            <div class="input">
-                                <input type="date" name="arrival" id="arrival" required>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="label">
-                                <label for="getaway">Távozás ideje</label>
-                            </div>
-                            <div class="input">
-                                <input type="date" name="getaway" id="getaway" required>
-                            </div>
-                        </div>
-                        <div class="label">
-                            <label for="info">Üzenet</label>
-                        </div>
-                        <div class="input">
-                            <textarea name="info" id="info" cols="30" rows="10"></textarea>
-                        </div>
-                        <button class="btn btn-outline-light right">Ajánlatkérés küldése</button>
-                    </div>
-                </fieldset>
-            </form>
+        <div>
+            <iframe id="maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.804731600378!2d17.77650311586434!3d46.80815225078286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4769b04a20218965%3A0x599da74bf6040f9c!2sBalatonszemes%2C%20Kinizsi%20u.%206%2C%208636!5e0!3m2!1shu!2shu!4v1642882849755!5m2!1shu!2shu"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </main>
-    <footer>
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.804731600378!2d17.77650311586434!3d46.80815225078286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4769b04a20218965%3A0x599da74bf6040f9c!2sBalatonszemes%2C%20Kinizsi%20u.%206%2C%208636!5e0!3m2!1shu!2shu!4v1642882849755!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div>
+    <div onclick="topFunction()" id="myBtn" title="Go to top">
+        <div class="arrow up"></div>
+    </div>
+
+    <footer id="contact">
+
+        <div id="title">
             <h3>Cottage House Balatonszemes</h3>
             <p>8636 Balatonszemes, Kinizsi utca 6. (Magyarország)</p>
-            <p>email cím</p>
-            <p>telefonszám</p>
-        </div>
-        <div>
-            maps
+            <p>email cím: hetenyinora@gmail.com</p>
+            <p>Telefonszám: +36 30 214 3709</p>
         </div>
         <div>
             Minden jog fentartva!
         </div>
     </footer>
+    <script src="add.js"></script>
 </body>
+
 </html>
